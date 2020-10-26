@@ -9,9 +9,11 @@ for i in range(num):
     while pyautogui.locateOnScreen('C://Users//ykita//vscode//scraping//image_win.png', confidence=0.9) is None:
         pyautogui.press('tab')
         time.sleep(0.1*random.random())
+        print('aaa')
     x, y = pyautogui.locateCenterOnScreen(
         'C://Users//ykita//vscode//scraping//image_win.png', confidence=0.9)
-    pyautogui.click(0.5*x, 0.5*y)
+    pyautogui.click(x, 0.8*y)
+    print('clicked')
     time.sleep(3+random.random())
     pyautogui.hotkey('alt', 'left') #windowsの戻る
     time.sleep(1+8*random.random())
